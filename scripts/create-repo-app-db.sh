@@ -10,7 +10,7 @@ export DB_SIZE=$9
 
 curl -fsSL https://download.devstream.io/download.sh | bash
 chmod +x dtm
-curl -H "Cache-Control: no-cache, no-store" -o config.yaml https://raw.githubusercontent.com/vfarcic/template-go-backend-db-google/main/config.yaml
+curl -H "Cache-Control: no-cache, no-store" -o config.yaml https://raw.githubusercontent.com/vfarcic/template-go-backend-db-aws/main/config.yaml
 ./dtm init --config-file config.yaml
 ./dtm apply --config-file config.yaml --yes
 rm dtm config.yaml devstream.state

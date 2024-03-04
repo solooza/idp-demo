@@ -73,7 +73,7 @@ spec:
                           Cluster: '"dot"'
               - kind: devopstoolkitseries.com/v1alpha1/appclaims
                 selector:
-                  query: .spec.compositionSelector.matchLabels.type == "backend-db-google"
+                  query: .spec.compositionSelector.matchLabels.type == "backend-db-aws"
                 port:
                   entity:
                     mappings:
